@@ -1,0 +1,114 @@
+
+*{ margin: 0%;
+  padding: 0%;
+
+}.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  
+}
+.container button{
+  border: none;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  /* box-shadow: 10px 2px 10px 10px lightgray; */
+  font-weight: bold;
+}
+.container button:hover{
+  color: rgb(138, 205, 236);
+}
+.cr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 17rem;
+}
+.hei{
+  height: 20vh;
+}
+.imgg{
+  height: 24vh;
+}
+.bttt button{
+  background-color: rgb(155, 152, 152);
+  border: none;
+  background: transparent;
+  color: gray;
+  border: 1px solid gray;
+}
+.bttt button:hover{
+  background-color:whitesmoke;
+  border: none;
+  color: black;
+}
+.card-read { 
+  cursor: pointer; 
+  font-size: 10px; 
+  font-weight: 700; 
+  letter-spacing: 6px; 
+  margin: 5px 0 10px; 
+  position: relative; 
+  text-align: right; 
+  text-transform: uppercase; 
+} 
+ 
+.card-read:after { 
+  background-color: #b8bddd; 
+  content: ""; 
+  display: block;
+  height: 1px; 
+  position: absolute; 
+  top: 2px; 
+  width: 75%; 
+} 
+.headimg{
+  height: 100vh;
+  /* width: 100%; */
+
+}
+.img_item img{height: 100vh;
+  width: 100%;
+
+
+}
+.ti-1{
+position: absolute; 
+top: 30%;
+ left: 30%; 
+
+color: #fff;
+font-size: 25px;
+/* border: 2px solid bla; */
+}
+.ti-1 input{ position: absolute;
+  border: 2px solid white;
+  border-radius:10px ;
+  top: 10rem;
+  left: 23%; 
+  width: 25rem;
+}
+.ti-1 h1{
+font-size: 5rem;
+}
+.ti-1 p{
+  position: absolute;
+  top:90% ;
+  left: 15%;
+}
+.logo h2{position: absolute;
+  top: 2%;
+  left: 3%;
+  font-size: 4rem;
+  width: 30px;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: capitalize;
+  
+}
