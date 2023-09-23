@@ -2,22 +2,97 @@
 *{ margin: 0%;
   padding: 0%;
 
-}.container{
+ }
+/* .nn{
+  background: transparent;  
+}
+.nav-link-custom{
+  color: white;
+}
+.nav-link-custom:hover{
+  color:orange;
+}
+.clror{
+  color:orange;
+} */
+
+/* navbar.css */
+.transparent-bg {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease-in-out;
+}
+.nav-link-custom{
+  color: white;
+}
+.solid-bg {
+  background-color: orange !important; /* Change this color as needed */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar.navbar-dark.fixed-top.px-4.clr {
+    padding: 15px 0; /* Adjust the padding as needed for mobile */
+  }
+
+  .navitem.fs-4.text-center {
+    text-align: center;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff; /* Change the background color of the toggle button */
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 0; /* Adjust the padding as needed for mobile */
+  }
+}
+
+/* Add more media queries and responsive styles as needed */
+
+
+
+/* Your existing CSS styles for nav-link-custom and other styles */
+
+.cart-quantity {
+  position: absolute;
+  top: 11px;
+  right: 14%;
+  background-color: #ff0000; 
+  color:black; 
+  border-radius: 50%; 
+  padding: 2px 4px; 
+  font-size: 12px; 
+  font-weight: bold; 
+  min-width: 18px; 
+  text-align: center; 
+}
+.cartt{
+  color: white;
+}
+.cartt:hover{
+  color: orange;
+}
+
+
+.container-2{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 3rem;
-  
 }
-.container button{
+.onebutton
+{
+  margin-top: 2rem !important;
+}
+.container-2 button{
   border: none;
   padding: 10px 20px;
   background-color: whitesmoke;
   /* box-shadow: 10px 2px 10px 10px lightgray; */
   font-weight: bold;
 }
-.container button:hover{
+.container-2 button:hover{
   color: rgb(138, 205, 236);
 }
 .cr{
@@ -77,38 +152,351 @@
 
 
 }
-.ti-1{
-position: absolute; 
-top: 30%;
- left: 30%; 
 
-color: #fff;
-font-size: 25px;
-/* border: 2px solid bla; */
+/* style for tha header section */
+header{
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
 }
-.ti-1 input{ position: absolute;
-  border: 2px solid white;
-  border-radius:10px ;
-  top: 10rem;
-  left: 23%; 
-  width: 25rem;
-}
-.ti-1 h1{
-font-size: 5rem;
-}
-.ti-1 p{
+.header-image{
   position: absolute;
-  top:90% ;
-  left: 15%;
+  top: -10vh;
+  z-index: -1;
 }
-.logo h2{position: absolute;
-  top: 2%;
-  left: 3%;
-  font-size: 4rem;
-  width: 30px;
-  color: red;
-  font-weight: bold;
-  cursor: pointer;
-  text-transform: capitalize;
+.header-image img{
+  width: 100rem;
+}
+.head{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 17vh;
+  align-items: center;
+}
+.logo{
+  width: 20vw;
+}
+.head h3{
+  font-size: 2.1em;
+  margin-top: 20px;
+  color: whitesmoke;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search{
+  display: flex;
+  margin-top: 20px;
+  width: 45vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px 0;
+}
+.search input{
+  outline: none;
+  border: none;
+  width: 50%;
+  padding-left: 5px;
+  font-size: 15px;
+}
+.search p{
+  color: gray;
+  border-right: 1px solid gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+.search .ii{
+  font-size: 40px;
+  color: rgb(252, 119,119);
+  padding-left: 8px;
+  padding-right:8px;
+}
+.search .iii{
+  font-size: 40px;
+  color: gray;
+  padding-left: 10px;
+}
+/* end tha header section */
+
+
+
+/* Styles for the shop-banner section */
+.shop-banner {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  margin-top: 18rem;
+  text-align: center;
+  margin-bottom: 2rem;
   
 }
+
+.container {
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+.shop-banner h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.shop-banner .orange-text {
+  color: orange;
+}
+
+.sale-percent {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff5722; /* Orange color */
+  margin: 20px 0;
+}
+
+.sale-percent span {
+  display: block;
+}
+
+.cart-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722; /* Orange color */
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #ff4500; /* A darker shade of orange on hover */
+}
+.stimg img{
+height: 90vh;
+width: 100%;
+}
+
+.container-1{ position: absolute;
+  top: auto;
+  color: #f4f4f4;
+  left: 3%;
+
+}
+
+
+/* our news */
+
+.orange-text{
+  color: orange;
+}
+.aligncard{
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  margin-right: -80px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 10%;
+ 
+  
+}
+.imagesize{
+  height: 30vh;
+  border-top-right-radius:15px;
+  border-top-left-radius:15px;
+}
+.bodysize{
+  height: 35vh;
+}
+
+.stylecard{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Apply the box shadow */
+  border: none;
+  border-top-right-radius:15px;
+  border-top-left-radius:15px;
+
+}
+.stylecard:hover{
+  box-shadow: none;
+}
+.read{
+  cursor: pointer;
+}
+.read:hover{
+  color: orange;
+}
+.boxed-btn{
+  background: orange;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+.boxed-btn:hover{
+  color: orange;
+  background-color: rgb(55, 54, 54);
+}
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer-area {
+  background-color: #333; /* Set your desired background color */
+  color: #fff; /* Text color for the footer */
+  padding: 60px 0;
+  height: 60vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Column Styles */
+.footer-box {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.widget-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+hr{
+  width: 90px;
+  height: 3px;
+  background-color: orangered;
+}
+
+/* Links in Footer */
+.pages ul,
+.pages ul li,
+.pages ul li a {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Contact Information */
+.get-in-touch ul li {
+  margin-bottom: 20px;
+}
+.pages ul li{
+  margin-bottom: 8px;
+}
+
+/* Subscribe Form */
+.subscribe p {
+  font-size: 16px;
+}
+
+.subscribe form {
+  display: flex;
+}
+
+.subscribe input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  background-color: #ff5722; /* Set your desired button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+  background-color: #ff4500; /* A darker shade of orange on hover */
+}
+
+
+
+
+/* CSS for the copyright section */
+.copyright {
+  background-color:rgb(70, 69, 69); /* Add background color as needed */
+  padding: 20px 0; /* Add padding as needed */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.container {
+  display: inline-block;
+  justify-content: space-between; /* Icons to the right, rest to the left */
+  align-items: center; /* Vertically center align content */
+}
+
+/* CSS for the copyright text */
+.copyright p {
+  margin: 0;
+  color: white;
+}
+.sam{
+  position: absolute;
+  left: 40rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.or{
+  color: orange;
+}
+
+/* CSS for the social icons */
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 80%;
+  
+}
+
+.social-icons ul li {
+  display: inline-block;
+  margin-left: 10px; /* Add spacing between icons */
+
+}
+
+/* Define the default styles for the icons */
+.social-icons ul li a {
+  color: white; /* Default color */
+  text-decoration: none;
+  font-size: 24px;
+  position: relative;
+  bottom: 10px;
+  
+}
+
+/* Add hover effects */
+.social-icons ul li a:hover {
+  color: orange; /* Change color on hover */
+  transform: scale(1.2); /* Scale up the icon on hover */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+}
+
+

@@ -1,40 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./App.css";
-import CardItems from './components/CardItems';
-import Allcard from './utils/Allcard';
-import Homeimg from './components/Homeimg';
-
+import HomePage from './pages/HomePage';
+import About from './pages/About';
+import Cart from './pages/Cart';
+import Error from './Error';
 const App = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
-
-  // Function to handle category change
-  const handleCategoryChange = (category) => {
-    setActiveCategory(category);
-  };
-
-  // Filter items based on the active category
-  const filteredItems = Allcard.filter((item) => {
-    if (activeCategory === 'all') {
-      return true; // Show all items
-    }
-    return item.category === activeCategory;
-  });
-
   return (
-    <div>
-      {/* Add buttons to select categories */}
-      <Homeimg/>
-      <div className='container'>
-        <button onClick={() => handleCategoryChange('all')}>Show All</button>
-        <button onClick={() => handleCategoryChange('lunch')}>Show Lunch</button>
-        <button onClick={() => handleCategoryChange('breakfast')}>Show Breakfast</button>
-        <button onClick={() => handleCategoryChange('dinner')}>Show Dinner</button>
-      </div>
-
-      {/* Render the CardItems component */}
-      <CardItems activeCategory={activeCategory} items={filteredItems} />
-    </div>
-  );
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<Error/>}/>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App
